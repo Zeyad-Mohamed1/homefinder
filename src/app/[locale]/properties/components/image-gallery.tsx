@@ -313,43 +313,18 @@ const ImageGallery = ({ data }: { data: Property | undefined }) => {
                 .map((Button, index) => (
                   <motion.button
                     key={index}
-                    className="flex items-center gap-2 md:gap-3 px-4 md:px-6 py-2.5 md:py-3.5 bg-white/90 rounded-xl
-                      transition-all duration-200 backdrop-blur-sm group
-                      border border-white/40 shadow-sm text-sm md:text-base
-                      hover:bg-white hover:border-white/60 hover:shadow-xl hover:shadow-black/5"
+                    className="flex flex-col items-center justify-center w-16 h-16 bg-white rounded-md
+                      backdrop-blur-sm border text-gray-700 transition-all duration-300 border-white/40 hover:bg-primary hover:text-white shadow-sm text-sm md:text-base"
                     onClick={(e) => {
                       e.stopPropagation();
                       setActiveView(Button.view as any);
                       setShowGallery(true);
                     }}
-                    whileHover={{
-                      scale: 1.03,
-                      y: -2,
-                      transition: {
-                        type: "spring",
-                        stiffness: 500,
-                        damping: 15,
-                      },
-                    }}
-                    whileTap={{ scale: 0.97 }}
-                    initial={{ opacity: 0, y: 15 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{
-                      duration: 0.02,
-                    }}
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
                   >
-                    <Button.icon
-                      className="text-gray-700 group-hover:text-blue-600 transition-all duration-200 
-                        transform group-hover:scale-110 group-hover:rotate-3"
-                      size={20}
-                    />
-                    <span
-                      className="font-semibold text-gray-700 group-hover:text-blue-600 
-                      transition-all duration-200 whitespace-nowrap tracking-wide
-                      group-hover:translate-x-0.5"
-                    >
-                      {Button.label}
-                    </span>
+                    <Button.icon className="" size={20} />
+                    <span className="text-xs">{Button.label}</span>
                   </motion.button>
                 ))}
             </div>

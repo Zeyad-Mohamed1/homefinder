@@ -58,7 +58,7 @@ const PropertyHeader = ({ property }: PropertyHeaderProps) => {
     );
 
   return (
-    <div className="border-y shadow-sm sticky max-sm:top-[69px] top-[72px] bg-white z-[95]">
+    <div className="border-y shadow-sm sticky top-[69px] bg-white z-[95]">
       <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row items-center justify-between p-4">
         <div className="flex items-center gap-4 w-full md:w-auto">
           <div className="flex flex-col gap-1 py-3">

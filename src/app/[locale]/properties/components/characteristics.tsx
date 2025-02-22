@@ -73,8 +73,8 @@ const Characteristics = ({ property }: { property: Property | undefined }) => {
   return (
     <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow duration-200">
       <div className="flex items-center gap-2 mb-6">
-        <div className="w-8 h-8 rounded-lg bg-blue-50 flex items-center justify-center">
-          <ScrollText size={16} className="text-blue-600" />
+        <div className="w-8 h-8 rounded-lg bg-primary/5 flex items-center justify-center">
+          <ScrollText size={16} className="text-primary" />
         </div>
         <h2 className="text-xl font-semibold">
           {locale === "en" ? "Characteristics" : "المميزات"}
@@ -96,7 +96,7 @@ const Characteristics = ({ property }: { property: Property | undefined }) => {
       <div className="flex justify-center">
         <button
           onClick={() => setShowAll(true)}
-          className="mt-4 text-blue-600 hover:text-blue-700 font-medium text-sm"
+          className="mt-4 text-primary hover:text-primary/80 font-medium text-sm"
         >
           {locale === "en" ? "SHOW ALL" : "عرض الكل"}
         </button>
@@ -118,8 +118,8 @@ const Characteristics = ({ property }: { property: Property | undefined }) => {
             >
               <div className="sticky top-0 bg-white border-b border-gray-100 px-6 py-4 flex items-center justify-between">
                 <div className="flex items-center gap-2">
-                  <div className="w-8 h-8 rounded-lg bg-blue-50 flex items-center justify-center">
-                    <ScrollText size={16} className="text-blue-600" />
+                  <div className="w-8 h-8 rounded-lg bg-primary/5 flex items-center justify-center">
+                    <ScrollText size={16} className="text-primary" />
                   </div>
                   <h2 className="text-xl font-semibold">
                     {locale === "en" ? "Characteristics" : "المميزات"}
